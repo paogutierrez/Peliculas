@@ -1,0 +1,136 @@
+:root {
+	--rojo: #E50914;
+	--fondo: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 40px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+.formulario{
+    padding:5px;
+    padding-top: 10px;
+    border-radius: 15px;
+    border: #FFF;
+    margin: 100px;
+    background:  linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../images/life.jpg);
+    background-position:center center;
+	background-size: cover;
+}
+
+.reg{
+    color:var(--rojo);
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    letter-spacing:5px;
+    font-size:50px;
+}
+
+.division{
+    text-align:center;
+    padding: 15px;
+    display: block;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin:10px;
+}
+
+label{
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.boton{
+ text-align: center; 
+}
+
+button{
+ background:black;
+ color:white;
+ padding:10px;
+ border:black;
+ margin:20px;
+ border-radius: 25%;
+ font-family:'Open Sans', sans-serif;
+}
+button:hover{
+    background:red;
+    color:white;
+    cursor: pointer;
+
+   }
+
+input{
+    width:30%;
+    height:40px;
+    margin-left: 5%;
+}
+textarea{
+    width:30%;
+    height:40px;
+    margin-left: 2%;
+}
+
+footer{
+    
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    background:black;
+  }
+  @media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+    footer{
+        padding:0%;
+        margin-left: 15%;
+        margin-right: 0%;
+      }
+    }

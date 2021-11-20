@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="styles/style.css">
+    <title>Reto de pelicula</title>
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<h2 class="logotipo">MOVIE ► PLAY</h2>
+			<nav>
+				<a href="index.html" class="activo">Inicio</a>
+				<a href="registro.html">Registro</a>			
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="pelicula-principal">
+			<div class="contenedor">
+				<h3 class="titulo">Ron da Error</h3>
+				<p class="descripcion">
+					Ambientada en un mundo donde los robots se han convertido en los mejores amigos de los niños, Ron's Gone Wrong cuenta la historia de un niño de 11 años que descubre que su amigo robot no funciona del todo.
+				</p>
+				<button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+				<button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+			</div>
+		</div>
+        <div class="peliculas-recomendadas contenedor">
+            <div class="contenedor-titulo-controles">
+                <h3>Peliculas Recomendadas</h3>
+                <div class="indicadores"> </div>    
+            </div>
+
+            <!--<div class="contenedor-principal">
+                
+
+                <div class="contenedor-carousel">
+                    <div class="carousel"></div>
+                        <div class="pelicula">
+                            <a href="#"><img class="imagen" src="images/dune.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img class="imagen" src="images/free guy.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img class="imagen" src="images/interestellar.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img class="imagen" src="images/la familia adams.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img class="imagen" src="images/la guerra del mañana.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img class="imagen" src="images/la tierra herrante.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img class="imagen" src="images/life.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>-->
+
+                <div class="row" id="items">
+
+                    <template id="template-card">
+                        <div class="card">
+                            <h5></h5>
+                            <img id="image" src="" alt="" class="img-thumbnail my-4"></img>
+                        </div>
+                    </template> 
+                </div>
+               
+            </div>
+        </div>
+	</main>
+    <footer>
+        <div class="containerF">
+          <p>
+            By Paola Gutierrez
+          </p>
+        </div>
+      </footer>
+    
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="script/index.js" type="module"></script>
+    <script src="data/data.js" type="module"></script>
+</body>
+</html>
